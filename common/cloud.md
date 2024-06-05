@@ -9,8 +9,6 @@
 
 ## 하이퍼바이저
 - 하나의 시스템 상에서 가상 컴퓨터를 여러개 구동할 수 있도록 해주는 중간계층
-- 
-<img width="426" alt="image" src="https://github.com/6cessfuldev/cs-study/assets/89137580/5ff083ad-b5c2-4669-be0e-60ffe7a0873c">
 
 ## 장점
 한대의 하드웨어로 여러 사용자들에게 독립적으로 클라우드 서비스 제공
