@@ -6,7 +6,6 @@ public class Singleton1 {
   }
 
   // Java의 멀티 스레드 환경에서는 생성자 호출이 여러번 발생할 가능성이 있음 
-  
   // public static Singleton1 getInstance() {
   //   if (instance == null) {
   //     instance = new Singleton1();
@@ -35,5 +34,15 @@ public class Singleton2 {
 
   public static synchronized Singleton2 getInstance() {
     return instance;
+  }
+}
+
+// 정적 멤버 선언 방식에 대한 해법으로 내부 맴버 클래스 안에서 정적 멤버로 선언
+class Singleton3 {
+  private static class singleInstanceHolder {
+    private static final Singleton3 INSTANCE = new Singleton3();
+  }
+  public static Singleton getInstance() {
+    return singleInstanceHolder.INSTANCE;
   }
 }
